@@ -58,6 +58,10 @@ public class Exercise_01 {
 			return true;
 		}
 		
+		if(word.length() >128){
+			return false;
+		}
+		
 		for (int i = 0; i < word.length(); i++) {
 			int index = word.charAt(i);
 			if(asciiChars[index]>0){
