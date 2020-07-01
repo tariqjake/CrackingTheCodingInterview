@@ -7,16 +7,16 @@ import java.util.Scanner;
  * 1.1 Is Unique: Implement an algorithm to determine if a string has all unique characters. 
  * What if you cannot use additional data structures?
  */
-public class Exercise_01 {
+public class Exercise_01_01 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter a value to check if it has all the chars unique:");
-		String word=scan.nextLine();
-		
+		String word = scan.nextLine();
+
 		System.out.println("Hashtable solution : " + hasAllUniqueCharacters(word));
 		System.out.println("Array solution 	   : " + hasAllUniqueChars(word));
-		
+
 	}
 
 	/**
@@ -41,7 +41,7 @@ public class Exercise_01 {
 		}
 		return true;
 	}
-	
+
 	/**
 	 * HashTable
 	 * 
@@ -53,32 +53,30 @@ public class Exercise_01 {
 
 	public static boolean hasAllUniqueChars(String word) {
 		int[] asciiChars = new int[128];
-		
+
 		if (word == null || word.length() <= 1) {
 			return true;
 		}
-		
-		if(word.length() >128){
+
+		if (word.length() > 128) {
 			return false;
 		}
-		
+
 		for (int i = 0; i < word.length(); i++) {
 			int index = word.charAt(i);
-			if(asciiChars[index]>0){
+			if (asciiChars[index] > 0) {
 				return false;
-			}else{
+			} else {
 				asciiChars[index]++;
 			}
 		}
 		return true;
 	}
-	
-	
-	
+
 	/*
-	 * AKLIMA TAKILAN SORULAR
-	 * 1 - Hashtable ile HashMap arasinda synchronized olmasi disinda ne fark var, neden "hint" hashtable dedi.
-	 * 2 - Hint te bit vektor dedi, hic kullanmadim. Kullanim alani nedir?
+	 * AKLIMA TAKILAN SORULAR 1 - Hashtable ile HashMap arasinda synchronized
+	 * olmasi disinda ne fark var, neden "hint" hashtable dedi. 2 - Hint te bit
+	 * vektor dedi, hic kullanmadim. Kullanim alani nedir?
 	 */
 
 }
