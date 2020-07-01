@@ -20,7 +20,7 @@ public class Exercise_01_01 {
 	}
 
 	/**
-	 * Array Approach
+	 * HashTable
 	 * 
 	 * @param word
 	 * @return true if the String has all unique characters,false o/w.
@@ -43,7 +43,7 @@ public class Exercise_01_01 {
 	}
 
 	/**
-	 * HashTable
+	 * Array Approach
 	 * 
 	 * Assumptions : UTF-8 ASCII table is being used
 	 * 
