@@ -20,7 +20,7 @@ public class Exercise_01_01 {
 	}
 
 	/**
-	 * HashTable
+	 * Array Approach
 	 * 
 	 * @param word
 	 * @return true if the String has all unique characters,false o/w.
