@@ -43,7 +43,7 @@ public class Exercise_01_01 {
 	}
 
 	/**
-	 * HashTable
+	 * Array Approach
 	 * 
 	 * Assumptions : UTF-8 ASCII table is being used
 	 * 
